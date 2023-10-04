@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
-  --primary-clr: #0c4b82;
-  --primary-clr1: #032644;
+  --primary-clr: #036940;
+  --primary-clr1: #003b05;
 }
 * {
   margin: 0;
@@ -26,8 +26,8 @@
   box-sizing: border-box;
 }
 .wapper {
-  max-width: 300px;     
-  min-height: 800px;
+  width: flex;     
+  min-height: 400px;
   background-color: #fff;
   padding: 25px;
   width: 100%;
@@ -40,7 +40,7 @@
   text-align: center;
   padding: 15px;
   font-size: 0.8rem;
-  color:#0c4b82
+  color:var(--primary-clr);
   
 }
 .wapper .input-field {
@@ -54,8 +54,8 @@
   height: 100%;
   border-radius: 20px;
   outline: none;
-  border: 2px solid #0c4b82;
-  background-color: #edf9ff;
+  border: 2px solid var(--primary-clr);
+  background-color: #d3ffed;
   font-size: 17px;
   padding: 10px;
 }
@@ -64,9 +64,9 @@
   height: 100%;
   margin-left: -30px;
   outline: none;
-  border: 1px solid #0c4b82
+  border: 1px solid var(--primary-clr)
 ;
-  background-color: #0c4b82
+  background-color: var(--primary-clr)
 ;
   border-radius: 20px;
   color: white;
@@ -79,16 +79,16 @@
   transform: scale(1.1);
 }
 .wapper .todolist {
-  max-height: 570px;
+  max-height: 200px;
   overflow-y: auto;
-  color:#0c4b82
+  color:var(--primary-clr)
 }
 .todolist li {
   list-style: none;
   height: 45px;
   line-height: 45px;
   position: relative;
-  background-color: #edf9ff;
+  background-color: #d3ffed;
   margin-bottom: 8px;
   border-radius: 10px;
   padding: 0 15px;
@@ -97,7 +97,7 @@
 .todolist li span {
   position: absolute;
   right: -45px;
-  background-color: #0c4b82  ;
+  background-color: var(--primary-clr)  ;
   color: white;
   width: 40px;
   text-align: center;
@@ -109,20 +109,20 @@
   right: 0;
 }
 .wapper .footer {
+  padding-bottom: 5px;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--primary-clr);
 }
 .footer button {
   width: 100px; 
   padding: 5px 10px;
   margin-left: 5px;
   outline: none;
-  border: 1px solid #0c4b82
-;
-  background-color: #0c4b82
-;
+  border: 1px solid var(--primary-clr);
+  background-color: var(--primary-clr);
   border-radius: 3px;
   color: white;
   transition: all 0.2s ease;
@@ -142,17 +142,17 @@ body {
 }
 .container {
   position: relative;
-  width: 1400px;
+  width: 1800px;
   min-height: 800px;
   margin: 0 auto;
   padding: 25px;
   color: #fff;
   display: flex;
   border-radius: 10px;
-  background-color: #ceefff;
+  background-color: #d3ffed;
 }
 .left {
-  width: 60%;
+  min-width: 40%;
   padding: 20px;
 }
 .calendar {
@@ -163,7 +163,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #0c4b82;
+  color: var(--primary-clr);
   border-radius: 25px;
   background-color: #fff;
 }
@@ -244,7 +244,7 @@ body {
   justify-content: center;
   cursor: pointer;
   color: var(--primary-clr);
-  background-color: #edf9ff;
+  background-color: #d3ffed;
   border: 1px solid #e3e3e3;
 }
 .calendar .days .day:nth-child(7n + 1) {
@@ -337,7 +337,7 @@ body {
   border-radius: 5px;
   padding: 0 20px;
   color: var(--primary-clr);
-  background-color: #edf9ff;
+  background-color: #d3ffed;
   border-radius: 5px;
   
 }
@@ -348,7 +348,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   color: var(--primary-clr);
-  background-color: #edf9ff;
+  background-color: #d3ffed;
 }
 .calendar .goto-today button:hover {
   color: #fff;
@@ -363,11 +363,11 @@ body {
   border-left: 1px solid var(--primary-clr);
   border-radius: 0;  
   color: var(--primary-clr);
-  background-color: #edf9ff;
+  background-color: #d3ffed;
 }
 .container .right {
   position: relative;
-  width: 40%;
+  min-width: 30%;
   min-height: 100%;
   padding: 20px 0;
 }
@@ -389,12 +389,12 @@ body {
 .right .today-date .event-day {
   font-size: 2rem;
   font-weight: 500;
-  color: #0c4b82;
+  color: var(--primary-clr);
 }
 .right .today-date .event-date {
   font-size: 1rem;
   font-weight: 400;
-  color: #0c4b82;
+  color: var(--primary-clr);
 }
 .events {
   width: 100%;
@@ -471,7 +471,7 @@ body {
 .add-event {
   position: absolute;
   bottom: 30px;
-  right: 350px;
+  right: 15px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -500,7 +500,7 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   opacity: 50%;
-  color: rgb(0, 76, 139);
+  color: var(--primary-clr);
 }
 .add-event-wrapper {
   position: absolute;
@@ -660,22 +660,92 @@ body {
   }
 }
 
-.credits {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 10px;
-  font-size: 12px;
-  color: #fff;
-  background-color: #b38add;
+.wap1{
+  background-color: #fff;
+  height: 25px;
 }
-.credits a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+
+.wap {
+  background-color: #d3ffed;
+  padding: 1rem;
+  min-height: 400px;
+  border-radius: 15px;
+  
 }
-.credits a:hover {
-  text-decoration: underline;
+
+.img-area {
+	position: relative;
+	width: 100%;
+	max-height: 450px;
+  min-height: 300px;	
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  color: var(--primary-clr);
+}
+.img-area .icon {
+	font-size: 100px;
+}
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+.img-area p {
+	color: var(--primary-clr);
+}
+.img-area p span {
+	font-weight: 600;
+}
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+.img-area.active:hover::before {
+	opacity: 1;
+}
+.select-image {
+	display: block;
+  width: 100%;
+	padding: 16px 16px;
+	border-radius: 15px;
+	background: var(--primary-clr);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.select-image:hover {
+	background: var(--primary-clr1);
 }
